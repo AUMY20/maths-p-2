@@ -7,9 +7,9 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
         
         <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="game_page.html"></script>
+        <script src="game_page.js"></script>
     </head>
-    <body>
+    <body background="https://wallpapercave.com/wp/wp4003779.jpg">
        <h4 id="player1" ></h4> <span id="score1" ></span>
        <br>
        <h4 id="player2" ></h4> <span id="score2" ></span>
@@ -23,15 +23,22 @@
                <br>
                <br>
                <h3>Number 1</h3>
-               <input id="Number_input_1" type="text">
+               <input id="Number_input_1" type="number">
                <br>
                <h3>Number 2</h3>
-               <input id="Number_input_2" type="text">
+               <input id="Number_input_2" type="number">
+               <br>
+               <br>
                <br>
                <button id="Button_send" onclick="send()">Send question</button>
                <div id="output"></div>
-               <h4 id="playername1"></h4><span id="score_1"></span>
-               <h4 id="playername2"></h4><span id="score_2"></span>
+               <h4 id="playername1">player 1 score : </h4><span id="player1_score"></span>
+               <h4 id="playername2">player 2 score : </h4><span id="player2_score"></span>
+               <br>
+               <br>
+               <br>
+               <h3>question turn : </h3><span id="Q-turn"></span>
+               <h3>answer turn : </h3><span id="A-turn"></span>
            </center>
        </div>
     </body>
